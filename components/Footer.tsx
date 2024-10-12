@@ -116,7 +116,7 @@ export const Footer = () => {
         <hr className="mb-10 mt-16 border-gray-200" />
 
         <p className="text-center text-sm text-gray-600">
-          © Copyright 2021, All Rights Reserved by Postcraft
+          © Copyright 2024, All Rights Reserved 
         </p>
       </div>
     </footer>
