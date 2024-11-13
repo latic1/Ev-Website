@@ -1,10 +1,14 @@
 import { AlignJustify } from "lucide-react";
 const Hero = () => {
   return (
-    <div className="relative h-screen bg-[url('/images/HeroBg.png')] bg-cover bg-center">
+    <div className="relative h-screen bg-[url('https://res.cloudinary.com/dcrvuwr7t/image/upload/f_auto,q_auto/v1/evlanding/h1fkfkkakyubx3cdo4ti')] bg-cover bg-center">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-5">
-          <img src="/images/Logo.png" alt="" className="w-28" />
+          <img
+            src="https://res.cloudinary.com/dcrvuwr7t/image/upload/f_auto,q_auto/v1/evlanding/mzytalvy1xmiwnlwwwb8"
+            alt=""
+            className="w-28"
+          />
           <div className="flex gap-4 text-white">
             <p className="text-white">Account</p>
             <AlignJustify />
@@ -28,7 +32,7 @@ const Hero = () => {
             <p className="font-bold">564 bhp</p>
           </div>
           <img
-            src="/images/Force-E-Web-Carousel-3038x1414-US_UP_glo8vf-1.png"
+            src="https://res.cloudinary.com/dcrvuwr7t/image/upload/f_auto,q_auto/v1/evlanding/fv3rcjw0qcxdcj3qcsed"
             className="h-[120px] w-[230px]"
             alt=""
           />

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export const Footer = () => {
@@ -6,7 +7,11 @@ export const Footer = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-x-12 gap-y-16 md:col-span-3 lg:grid-cols-6">
           <div className="">
-            <img className="h-20 w-20" src="/images/footerlogo.png" alt="" />
+            <img
+              className="h-20 w-20"
+              src="https://res.cloudinary.com/dcrvuwr7t/image/upload/f_auto,q_auto/v1/evlanding/q9zoawz14ajtpd0vrsqm"
+              alt=""
+            />
           </div>
 
           <div>
@@ -84,10 +89,26 @@ export const Footer = () => {
 
           <div className="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
             <div className="flex gap-4">
-              <img src="/images/Vector-3.png" className="h-7 w-7" alt="" />
-              <img src="/images/Vector-4.png" className="h-7 w-7" alt="" />
-              <img src="/images/Vector-5.png" className="h-7 w-7" alt="" />
-              <img src="/images/Vector-6.png" className="h-7 w-7" alt="" />
+              <img
+                src="https://res.cloudinary.com/dcrvuwr7t/image/upload/f_auto,q_auto/v1/evlanding/kixnfngt93r0hvnkaqz6"
+                className="h-7 w-7"
+                alt=""
+              />
+              <img
+                src="https://res.cloudinary.com/dcrvuwr7t/image/upload/f_auto,q_auto/v1/evlanding/up3av2zaezfwija24hda"
+                className="h-7 w-7"
+                alt=""
+              />
+              <img
+                src="https://res.cloudinary.com/dcrvuwr7t/image/upload/f_auto,q_auto/v1/evlanding/wdwcvgkwcqpcgzenhf3m"
+                className="h-7 w-7"
+                alt=""
+              />
+              <img
+                src="https://res.cloudinary.com/dcrvuwr7t/image/upload/f_auto,q_auto/v1/evlanding/ul4exeytgitivnx4mtqq"
+                className="h-7 w-7"
+                alt=""
+              />
             </div>
             <div className="mt-12 flex w-full">
               <button
@@ -116,7 +137,10 @@ export const Footer = () => {
         <hr className="mb-10 mt-16 border-gray-200" />
 
         <p className="text-center text-sm text-gray-600">
-          © Copyright 2021, All Rights Reserved by Postcraft
+          © Copyright 2021, All Rights Reserved by{" "}
+          <Link href="linkedin.com/in/latif-musah" target="_blank">
+            Latif Musah
+          </Link>
         </p>
       </div>
     </footer>

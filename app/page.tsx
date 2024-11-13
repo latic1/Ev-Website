@@ -1,4 +1,5 @@
 import Blog from "@/components/Blog";
+import { Carousel } from "@/components/Carousel";
 import Configure from "@/components/Configure";
 import { Footer } from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -13,6 +14,7 @@ export default function Home() {
     <main className="">
       <Hero/>
       <Configure/>
+      <Carousel/>
       <Section4/>
       <Mission/>
       <TrimLevel/>
