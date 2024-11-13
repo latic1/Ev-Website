@@ -20,13 +20,13 @@ const Blog = () => {
           </div>
           <div className="col-span-2">
             <img
-              src="/images/fisker-ocean-front-blue-close_ryg1ki.jpeg-1.png"
+              src="https://res.cloudinary.com/dcrvuwr7t/image/upload/f_auto,q_auto/v1/evlanding/vrarsediavqy8urqhgki"
               alt=""
             />
           </div>
           <div className="col-span-2">
             <img
-              src="/images/fisker-extreme-e-teaser-2-1595865630.jpg-1.png"
+              src="https://res.cloudinary.com/dcrvuwr7t/image/upload/f_auto,q_auto/v1/evlanding/njzuvzzts4b2dkfbqcyg"
               alt=""
             />
           </div>

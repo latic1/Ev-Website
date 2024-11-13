@@ -28,7 +28,7 @@ export const TrimLevel = () => {
                 <ChevronRight />
               </button>
               <p className="orbitron mb-5 mt-28">45000 CAD</p>
-              <div className="z-50 h-96 transform rounded-xl bg-[url('/images/Image.jpg')] bg-cover bg-center duration-500 hover:-translate-y-72"></div>
+              <div className="z-50 h-96 transform rounded-xl bg-[url('https://res.cloudinary.com/dcrvuwr7t/image/upload/f_auto,q_auto/v1/evlanding/tifg6xdh5mm9pq2nfbhs')] bg-cover bg-center duration-500 hover:-translate-y-72"></div>
             </div>
           </div>
           <div>
@@ -54,7 +54,7 @@ export const TrimLevel = () => {
                 </button>
               </div>
               <p className="orbitron mb-5 mt-[60px]">65000 CAD</p>
-              <div className="z-50 h-96 transform rounded-xl bg-[url('/images/Image-2.jpg')] bg-cover bg-center duration-500 hover:-translate-y-72"></div>
+              <div className="z-50 h-96 transform rounded-xl bg-[url('https://res.cloudinary.com/dcrvuwr7t/image/upload/f_auto,q_auto/v1/evlanding/dalugdhrbz0dhfskgzt3')] bg-cover bg-center duration-500 hover:-translate-y-72"></div>
             </div>
           </div>
           <div>
@@ -81,7 +81,7 @@ export const TrimLevel = () => {
                 </button>
               </div>
               <p className="orbitron mb-5 mt-[60px]">80000 CAD</p>
-              <div className="z-50 h-96 w-full transform rounded-xl bg-[url('/images/Image-1.jpg')] bg-cover bg-center duration-500 hover:-translate-y-72"></div>
+              <div className="z-50 h-96 w-full transform rounded-xl bg-[url('https://res.cloudinary.com/dcrvuwr7t/image/upload/f_auto,q_auto/v1/evlanding/tpzipk7pgjxgkwynypjo')] bg-cover bg-center duration-500 hover:-translate-y-72"></div>
             </div>
           </div>
         </div>

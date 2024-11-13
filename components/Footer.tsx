@@ -136,10 +136,18 @@ export const Footer = () => {
 
         <hr className="mb-10 mt-16 border-gray-200" />
 
-        <p className="text-center text-sm text-gray-600">
-          © Copyright 2024, All Rights Reserved by{" "}
-          <Link href="linkedin.com/in/latif-musah" target="_blank">
-            Latif Musah
+        <p className="text-center text-sm text-gray-600 flex justify-center">
+          © Copyright 2024, All Rights Reserved by {" "}
+          <Link
+            href="linkedin.com/in/latif-musah"
+            target="_blank"
+            className="text-blue-400 flex"
+          >
+            
+            Latif Musah <span className="relative flex h-3 w-3 ml-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
+              <span className="relative inline-flex h-3 w-3 rounded-full bg-sky-500"></span>
+            </span>
           </Link>
         </p>
       </div>

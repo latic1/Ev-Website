@@ -16,9 +16,9 @@ export const Carousel = () => {
             </span>
           </div>
         </div>
-        <div className="mb-5 flex w-full items-center justify-between">
+        <div className="mb-5 md:flex w-full items-center justify-between">
           <h4 className="orbitron text-3xl font-bold lg:text-6xl">SOLAR SKY</h4>{" "}
-          <div className="w-3/5 lg:w-2/5">
+          <div className="w-full lg:w-2/5">
             <p className="text-xs">
               When fully exposed to the sun, the Fisker Ocean
               Extreme’s SolarSky can produce up to 1,500 clean, emissions-free
