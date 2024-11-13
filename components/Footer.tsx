@@ -137,7 +137,7 @@ export const Footer = () => {
         <hr className="mb-10 mt-16 border-gray-200" />
 
         <p className="text-center text-sm text-gray-600 flex justify-center">
-          © Copyright 2024, All Rights Reserved by {" "}
+          © Copyright {new Date().getFullYear()}, All Rights Reserved by {" "}
           <Link
             href="linkedin.com/in/latif-musah"
             target="_blank"
