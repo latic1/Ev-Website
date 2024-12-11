@@ -7,7 +7,7 @@ const Page = () => {
       <nav className="fixed left-0 top-0 z-20 w-full bg-white shadow-md">
         <div className="container mx-auto flex items-center justify-between px-6 py-4">
           <a href="#" className="text-xl font-bold text-black">
-            BrandLogo
+            Myna UI
           </a>
           <button
             className="block text-gray-700 focus:outline-none md:hidden"
