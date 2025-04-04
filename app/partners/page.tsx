@@ -1,13 +1,11 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function PartnersPage() {
   return (
     <div className="flex min-h-screen flex-col bg-gray-50">
-      {/* Navigation */}
       <header className="sticky top-0 z-50 border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex h-16 items-center justify-between">
@@ -20,7 +18,7 @@ export default function PartnersPage() {
                 { href: "/partners", label: "Home" },
                 { href: "/partners", label: "About" },
                 { href: "/partners", label: "Services" },
-                { href: "/pricing", label: "Pricing" },
+                { href: "/partners", label: "Pricing" },
                 { href: "/partners", label: "Partners", active: true },
                 { href: "/partners", label: "Blog" },
               ].map((item) => (
@@ -59,36 +57,33 @@ export default function PartnersPage() {
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="flex-grow">
         <section className="py-20 md:py-28">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Heading */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="text-center mb-16"
             >
-              <span className="inline-block px-4 py-1 rounded-full  text-[#3975ac] text-sm font-semibold tracking-wide uppercase mb-6">
+              <span className="inline-block px-4 py-1 rounded-full  text-[#3975ac] text-sm font-semibold font-sans tracking-wide uppercase mb-6">
                 Our Partners
               </span>
-              <h1 className="mx-auto max-w-3xl text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+              <h1 className="mx-auto max-w-3xl text-4xl md:text-4xl leading-normal font-bold text-gray-900  font-sans">
                 Collaborating with Industry Leaders to Deliver Excellence
               </h1>
-              <p className="mt-4 max-w-2xl mx-auto text-gray-600 text-lg">
+              <p className="mt-4 max-w-2xl mx-auto text-gray-600 text-lg font-sans">
                 We partner with top organizations to bring you unparalleled solutions.
               </p>
             </motion.div>
 
-            {/* Partners Grid - Fixed 3 columns with larger cards */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10 max-w-5xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-10 max-w-5xl mx-auto">
               {[
                 { src: "/clientpartnerlogos/adjeley jewelry logo.webp", alt: "Adjeley Jewelry" },
                 { src: "/clientpartnerlogos/African Angels Academy.png", alt: "African Angels Academy" },
-                { src: "/clientpartnerlogos/MDF LOGO.png", alt: "MDF" },
-                { src: "/clientpartnerlogos/MEST LOGO.png", alt: "MEST" },
-                { src: "/clientpartnerlogos/DDDD.png", alt: "Sika Amankwa" },
+                { src: "/clientpartnerlogos/MDF LOGO.png", alt: "MDF Africa" },
+                { src: "/clientpartnerlogos/MEST-Logo.png", alt: "MEST" },
+                { src: "/clientpartnerlogos/Ace-avenue.png", alt: "Ace Avenue" },
               ].map((partner, index) => (
                 <motion.div
                   key={partner.alt}
@@ -97,12 +92,18 @@ export default function PartnersPage() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="group relative"
                 >
-                  <div className="relative overflow-hidden rounded-xl bg-white p-6 shadow-md transition-all duration-300 group-hover:shadow-lg">
+                  <div className="relative rounded-xl bg-white p-6 shadow-md transition-all duration-300 group-hover:shadow-lg">
                     <img
                       src={partner.src}
                       alt={partner.alt}
                       className="w-full h-32 object-contain transition-transform duration-300 group-hover:scale-105"
                     />
+                    <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
+                      <div className="bg-gray-900 text-white text-sm font-medium px-3 py-1 rounded-lg shadow-lg whitespace-nowrap">
+                        {partner.alt}
+                      </div>
+                      <div className="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-x-4 border-x-transparent border-t-4 border-t-gray-900" />
+                    </div>
                   </div>
                 </motion.div>
               ))}
@@ -111,7 +112,6 @@ export default function PartnersPage() {
         </section>
       </main>
 
-     
     </div>
   );
 }

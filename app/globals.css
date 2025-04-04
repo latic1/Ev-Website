@@ -38,7 +38,11 @@
 .axiforma{
   font-family: var(--font-inter);
 }
+.open-sans{
+  font-family: var(--font-open-sans);
+}
+
 
 .body {
-  font-family: var(--font-inter);
+  font-family: var(--font-open-sans);
 }

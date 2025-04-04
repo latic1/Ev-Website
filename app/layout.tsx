@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
-import { Inter, Orbitron, Fira_Sans } from "next/font/google";
+import { Inter, Orbitron, Fira_Sans ,Open_Sans } from "next/font/google";
 import "./globals.css";
 
 const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron" });
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: ["400", "300", "500","600"],
+  variable: "--font-open-sans",
+});
 const inter = Fira_Sans({
   subsets: ["latin"],
   weight: ["400", "100", "200", "300", "500"],
@@ -21,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${orbitron.variable} ${inter.variable}`}>
+      <body className={`${orbitron.variable} ${inter.variable} ${openSans.variable}`}>
         {children}
       </body>
     </html>
