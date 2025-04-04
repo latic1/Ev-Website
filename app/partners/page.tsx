@@ -82,7 +82,7 @@ export default function PartnersPage() {
             </motion.div>
 
             {/* Partners Grid - Fixed 3 columns with larger cards */}
-            <div className="grid grid-cols-3 gap-10 max-w-5xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10 max-w-5xl mx-auto">
               {[
                 { src: "/clientpartnerlogos/adjeley jewelry logo.webp", alt: "Adjeley Jewelry" },
                 { src: "/clientpartnerlogos/African Angels Academy.png", alt: "African Angels Academy" },
