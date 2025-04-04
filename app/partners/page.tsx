@@ -8,10 +8,10 @@ export default function PartnersPage() {
   return (
     <div className="flex min-h-screen flex-col bg-gray-50">
       {/* Navigation */}
-      {/* <header className="sticky top-0 z-50 border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+      <header className="sticky top-0 z-50 border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex h-16 items-center justify-between">
-            <Link href="/" className="text-2xl font-bold text-blue-600 tracking-tight">
+            <Link href="/" className="text-2xl font-bold text-[#3975ac] tracking-tight">
               ZUPUTO
             </Link>
             
@@ -27,34 +27,37 @@ export default function PartnersPage() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className={`text-sm font-medium transition-colors ${
+                  className={`relative text-sm font-medium transition-colors ${
                     item.active 
-                      ? "text-blue-600 border-b-2 border-blue-600" 
+                      ? "text-[#3975ac]" 
                       : "text-gray-600 hover:text-blue-600"
                   }`}
                 >
                   {item.label}
+                  {item.active && (
+                    <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-[#3975ac] rounded-full" />
+                  )}
                 </Link>
               ))}
             </div>
 
             <div className="flex items-center gap-4">
               <Link
-                href="/login"
+                href="#"
                 className="rounded-lg px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 transition-colors"
               >
                 Login
               </Link>
               <Link
-                href="/signup"
-                className="rounded-lg px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+                href="#"
+                className="rounded-lg px-4 py-2 text-sm font-medium text-white bg-[#3975ac] hover:bg-blue-700 transition-colors"
               >
                 Sign Up
               </Link>
             </div>
           </nav>
         </div>
-      </header> */}
+      </header>
 
       {/* Main Content */}
       <main className="flex-grow">
@@ -98,7 +101,7 @@ export default function PartnersPage() {
                     <img
                       src={partner.src}
                       alt={partner.alt}
-                      className="w-full h-36 object-contain transition-transform duration-300 group-hover:scale-105"
+                      className="w-full h-32 object-contain transition-transform duration-300 group-hover:scale-105"
                     />
                   </div>
                 </motion.div>
@@ -108,12 +111,7 @@ export default function PartnersPage() {
         </section>
       </main>
 
-      {/* Footer */}
-      {/* <footer className="border-t py-8 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-600 text-sm">
-          © {new Date().getFullYear()} Zuputo. All rights reserved.
-        </div>
-      </footer> */}
+     
     </div>
   );
 }
