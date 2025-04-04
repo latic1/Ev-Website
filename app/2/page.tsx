@@ -89,7 +89,7 @@ const Page = () => {
       </nav>
 
       {/* Heading Section */}
-      <div className="bg-sky-50/60 pt-40">
+      <div className="bg-[#fcfeff] pt-40">
         <div className="z-10 mx-auto -mb-36 w-full max-w-lg px-4 text-center">
           <h1 className="mb-4 text-4xl font-semibold md:text-5xl">
             Find Your Tribe, Build Your Network
