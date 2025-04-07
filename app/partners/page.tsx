@@ -180,7 +180,94 @@ export default function PartnersPage() {
             </div>
 
             <h2 className="mb-4 mt-12 text-center text-2xl text-gray-800">
-              Partner Showcase 4
+               3
+            </h2>
+            <div className="mx-auto my-12 max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col items-center gap-y-10 md:flex-row md:gap-x-12 md:gap-y-0">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="w-full md:w-2/5"
+        >
+          <h2 className="text-2xl font-semibold text-gray-800 sm:text-3xl lg:text-4xl">
+            Partnering for Excellence
+          </h2>
+          <p className="mt-4 text-lg text-gray-600">
+            We collaborate with industry-leading organizations to deliver innovative, unparalleled solutions tailored to your needs.
+          </p>
+          <motion.div
+            initial={{ width: 0 }}
+            animate={{ width: "50%" }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="mt-6 h-1 w-16 bg-[#3975ac]"
+          />
+        </motion.div>
+
+        <motion.section
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="w-full overflow-hidden md:w-3/5"
+        >
+          <InfiniteMovingLogos
+            speed="fast"
+            direction="left"
+            pauseOnHover={true}
+            items={[
+              {
+                logo: "/clientpartnerlogos/MDF LOGO.png",
+                name: "Logo",
+              },
+              {
+                logo: "/clientpartnerlogos/MEST-Logo.png",
+                name: "Logo",
+              },
+              {
+                logo: "/clientpartnerlogos/adjeley jewelry logo.webp",
+                name: "Logo",
+              },
+              {
+                logo: "/clientpartnerlogos/African Angels Academy.png",
+                name: "Logo",
+              },
+              {
+                logo: "/clientpartnerlogos/Ace-avenue.png",
+                name: "Logo",
+              },
+            ]}
+          />
+        </motion.section>
+      </div>
+    </div>
+
+
+    <h2 className="mb-4 mt-12 text-center text-2xl text-gray-800">
+           4
+            </h2>
+    <div className=" gap-y-4 my-10 gap-x-24 mx-auto">
+              <div className="">
+              <h1 className="mx-auto max-w-3xl font-sans text-4xl text-center font-bold leading-normal text-gray-900 md:text-4xl">
+                  We partner with top organizations to bring you unparalleled solutions.
+                </h1>
+              </div>
+              <section className="w-full mt-10">
+                <InfiniteMovingLogos
+                  speed="fast"
+                  direction="left"
+                  items={[
+                    { logo: "/clientpartnerlogos/MDF LOGO.png", name: "MDF Africa" },
+                    { logo: "/clientpartnerlogos/MEST-Logo.png", name: "MEST" },
+                    { logo: "/clientpartnerlogos/adjeley jewelry logo.webp", name: "Adjeley Jewelry" },
+                    { logo: "/clientpartnerlogos/African Angels Academy.png", name: "African Angels Academy" },
+                    { logo: "/clientpartnerlogos/Ace-avenue.png", name: "Ace Avenue" },
+                  ]}
+                />
+              </section>
+            </div>
+
+            <h2 className="mb-4 mt-12 text-center text-2xl text-gray-800">
+           5
             </h2>
             <div className="mx-auto mt-10 max-w-5xl">
               <div className="flex flex-wrap justify-center gap-8">
@@ -222,7 +309,9 @@ export default function PartnersPage() {
                 ))}
               </div>
             </div>
-
+            <h2 className="mb-4 mt-12 text-center text-2xl text-gray-800">
+           6
+            </h2>
             <section className="bg-gray-50 py-10 sm:py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.h2
@@ -260,68 +349,10 @@ export default function PartnersPage() {
       </div>
     </section>
 
-    <div className="mx-auto my-12 max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col items-center gap-y-10 md:flex-row md:gap-x-12 md:gap-y-0">
-        {/* Text Block */}
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          className="w-full md:w-2/5"
-        >
-          <h2 className="text-2xl font-semibold text-gray-800 sm:text-3xl lg:text-4xl">
-            Partnering for Excellence
-          </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            We collaborate with industry-leading organizations to deliver innovative, unparalleled solutions tailored to your needs.
-          </p>
-          <motion.div
-            initial={{ width: 0 }}
-            animate={{ width: "50%" }}
-            transition={{ duration: 1, delay: 0.3 }}
-            className="mt-6 h-1 w-16 bg-[#3975ac]"
-          />
-        </motion.div>
-
-        {/* Infinite Moving Logos */}
-        <motion.section
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="w-full overflow-hidden md:w-3/5"
-        >
-          <InfiniteMovingLogos
-            speed="fast"
-            direction="left"
-            pauseOnHover={true}
-            items={[
-              {
-                logo: "/clientpartnerlogos/MDF LOGO.png",
-                name: "Logo",
-              },
-              {
-                logo: "/clientpartnerlogos/MEST-Logo.png",
-                name: "Logo",
-              },
-              {
-                logo: "/clientpartnerlogos/adjeley jewelry logo.webp",
-                name: "Logo",
-              },
-              {
-                logo: "/clientpartnerlogos/African Angels Academy.png",
-                name: "Logo",
-              },
-              {
-                logo: "/clientpartnerlogos/Ace-avenue.png",
-                name: "Logo",
-              },
-            ]}
-          />
-        </motion.section>
-      </div>
-    </div>
-
-            {/* Variant 1: Card Carousel */}
+ 
+    <h2 className="mb-4 mt-12 text-center text-2xl text-gray-800">
+           7
+            </h2>
             <div className=" gap-y-4 my-10 gap-x-24 mx-auto">
               <div className="">
               <h1 className="mx-auto max-w-3xl font-sans text-4xl text-center font-bold leading-normal text-gray-900 md:text-4xl">
