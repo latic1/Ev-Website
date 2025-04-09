@@ -298,7 +298,7 @@ export default function PartnersPage() {
                     alt: "Adjeley Jewelry",
                   },
                   {
-                    src: "/clientpartnerlogos/African Angels Academy.png",
+                    src: "/clientpartnerlogos/african-angels-academy.png",
                     alt: "African Angels Academy",
                   },
                   {
