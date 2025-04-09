@@ -269,7 +269,7 @@ export default function PartnersPage() {
                       name: "Adjeley Jewelry",
                     },
                     {
-                      logo: "/clientpartnerlogos/African Angels Academy.png",
+                      logo: "/clientpartnerlogos/african-angels-academy.png",
                       name: "African Angels Academy",
                     },
                     {
