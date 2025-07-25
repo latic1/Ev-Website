@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsFillInfoCircleFill } from 'react-icons/bs';
-import classNames from 'classnames';
-import SimpleToolTip from '../simple-tooltip';
+import SimpleToolTip from './simple-tooltip';
+import { cn } from '@/lib/utils';
 
 type SelectProps = React.SelectHTMLAttributes<HTMLSelectElement> & {
   label?: string;
@@ -61,7 +61,7 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
           ref={ref}
           id={selectId}
           name={name}
-          className={classNames(
+          className={cn(
             'w-full items-center justify-center rounded-md border bg-white/0 p-3 text-sm transition-all outline-none',
             error ? 'border-red-500' : 'border-gray-300'
           )}

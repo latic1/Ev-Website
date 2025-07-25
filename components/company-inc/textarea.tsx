@@ -1,7 +1,7 @@
 import React from "react";
 import { BsFillInfoCircleFill } from "react-icons/bs";
-import classNames from "classnames";
-import SimpleToolTip from "../simple-tooltip";
+import SimpleToolTip from "./simple-tooltip";
+import { cn } from "@/lib/utils";
 
 type TextareaProps = React.TextareaHTMLAttributes<HTMLTextAreaElement> & {
   label?: string;
@@ -57,7 +57,7 @@ export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
           id={textareaId}
           name={name}
           ref={ref}
-          className={classNames(
+          className={cn(
             "w-full px-3 py-2 border rounded-md bg-white/0 outline-none transition-all text-sm",
             error ? "border-red-500" : "border-gray-300"
           )}

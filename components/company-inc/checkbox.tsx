@@ -1,6 +1,6 @@
 import React from 'react';
 import { BsFillInfoCircleFill } from 'react-icons/bs';
-import SimpleToolTip from '../simple-tooltip';
+import SimpleToolTip from './simple-tooltip';
 
 interface CheckboxProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;

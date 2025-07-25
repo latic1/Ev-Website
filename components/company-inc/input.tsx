@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import { BsFillInfoCircleFill } from 'react-icons/bs';
-import { capitalizeFirstLetter, classNames } from "@/util";
-import SimpleToolTip from '../simple-tooltip';
+import { capitalizeFirstLetter, cn } from "@/lib/utils";
+import SimpleToolTip from './simple-tooltip';
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
@@ -57,7 +57,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
               <div
                 id={`${id}-feedback`}
                 aria-live="polite"
-                className={classNames(
+                className={cn(
                   'text-xs font-normal',
                   meta.error ? 'text-rose-500' : 'text-green-400'
                 )}
@@ -72,7 +72,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         <input
           id={id}
           ref={ref}
-          className={classNames(
+          className={cn(
             'w-full border rounded-md bg-white/0 p-3 text-sm transition-all outline-none',
             error ? 'border-red-500' : 'border-gray-200'
           )}

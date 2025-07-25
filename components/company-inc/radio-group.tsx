@@ -1,6 +1,6 @@
 import React from 'react';
 import { BsFillInfoCircleFill } from 'react-icons/bs';
-import SimpleToolTip from '../simple-tooltip';
+import SimpleToolTip from './simple-tooltip';
 
 interface RadioGroupProps {
   label: string;
