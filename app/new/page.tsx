@@ -10,7 +10,7 @@ import {
   UseFormGetValues,
 } from "react-hook-form";
 import { z } from "zod";
-import { useState, useMemo, useEffect, useRef, ReactElement } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/company-inc/input";
 import { Textarea } from "@/components/company-inc/textarea";
@@ -35,14 +35,12 @@ type FormData = z.infer<typeof formSchema>;
 type Shareholder = FormData["shareholders"][0];
 type Director = FormData["directors"][0];
 type BeneficialOwner = FormData["beneficialOwners"][0];
-type Secretary = FormData["secretary"];
-type Auditor = FormData["auditor"];
+
 
 // Step indicator component
 function StepIndicator({
   currentStep,
   onStepClick,
-  completedSteps,
   steps,
 }: {
   currentStep: number;

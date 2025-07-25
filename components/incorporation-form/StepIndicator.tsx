@@ -1,4 +1,3 @@
-import { ChevronRight } from "lucide-react";
 
 type StepIndicatorProps = {
   currentStep: number;
