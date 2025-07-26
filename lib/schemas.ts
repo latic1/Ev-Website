@@ -28,9 +28,7 @@ const tinSchema = z.object({
 
 const dateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Date must be in YYYY-MM-DD format");
 const phoneSchemaGhana = z.string().regex(/^0\d{9}$/, "Phone number must be exactly 10 digits and start with 0");
-const phoneSchemaIntl = z.string().min(7, "Phone number is required for non-Ghanaians");
 const ghanaCardSchema = z.string().regex(/^GHA-\d{9}-\d$/, "Ghana Card number must follow format GHA-123456789-1");
-const passportSchema = z.string().min(6, "Passport number is required for non-Ghanaians");
 
 const auditorSchema = z.object({
   name: z.string().min(1, "Auditor name is required"),

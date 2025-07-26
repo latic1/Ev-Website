@@ -78,7 +78,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a className="text-white hover:text-gray-300">
-                  Owner's Manual{" "}
+                  Owners Manual{" "}
                 </a>
               </li>
               <li>

@@ -2,12 +2,9 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { InfiniteMovingLogos } from "@/components/ui/infinite-moving-logos";
-import Image from "next/image";
 
 export default function PartnersPage() {
-  const [isHoveringCard, setIsHoveringCard] = useState(false);
 
   const partners = [
     { src: "/clientpartnerlogos/MDF LOGO.png", alt: "MDF Africa" },

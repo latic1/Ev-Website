@@ -2,7 +2,6 @@
 
 import { ChevronRight, X } from "lucide-react";
 import { useState } from "react";
-import { Modal } from "./Modal";
 
 export const TrimLevel = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

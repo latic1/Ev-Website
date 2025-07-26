@@ -302,7 +302,7 @@ function ShareholderDetailsStep({
   onAdd: () => void;
   onNext: () => void;
   onPrev: () => void;
-  trigger?: any;
+  trigger?: (() => void) | (() => Promise<boolean>);
 }) {
   return (
     <div className="space-y-6">
@@ -1326,7 +1326,7 @@ function BeneficialOwnersStep({
   onPrev: () => void;
   shareholders: Shareholder[];
 }) {
-  const boShareholders = shareholders.filter((s: any) => s.isBeneficialOwner);
+  const boShareholders = shareholders.filter((s: Shareholder) => s.isBeneficialOwner);
 
   return (
     <div className="space-y-6">

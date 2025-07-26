@@ -7,7 +7,6 @@ import { Mission } from "@/components/Mission";
 import Section4 from "@/components/Section4";
 import TestDrive from "@/components/TestDrive";
 import { TrimLevel } from "@/components/TrimLevel";
-import Image from "next/image";
 
 export default function Home() {
   return (
